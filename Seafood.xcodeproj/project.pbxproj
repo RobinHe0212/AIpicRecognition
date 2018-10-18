@@ -12,6 +12,7 @@
 		0FDA2FDB2178CB6700597628 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FDA2FD92178CB6700597628 /* Main.storyboard */; };
 		0FDA2FDD2178CB6A00597628 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FDA2FDC2178CB6A00597628 /* Assets.xcassets */; };
 		0FDA2FE02178CB6A00597628 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FDA2FDE2178CB6A00597628 /* LaunchScreen.storyboard */; };
+		0FDA2FE82178D8B700597628 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0FDA2FE72178D8B700597628 /* Inceptionv3.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		0FDA2FDC2178CB6A00597628 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0FDA2FDF2178CB6A00597628 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0FDA2FE12178CB6A00597628 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FDA2FE72178D8B700597628 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				0FDA2FDC2178CB6A00597628 /* Assets.xcassets */,
 				0FDA2FDE2178CB6A00597628 /* LaunchScreen.storyboard */,
 				0FDA2FE12178CB6A00597628 /* Info.plist */,
+				0FDA2FE72178D8B700597628 /* Inceptionv3.mlmodel */,
 			);
 			path = Seafood;
 			sourceTree = "<group>";
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FDA2FD82178CB6700597628 /* ViewController.swift in Sources */,
+				0FDA2FE82178D8B700597628 /* Inceptionv3.mlmodel in Sources */,
 				0FDA2FD62178CB6700597628 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +289,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SZV6XCL93K;
 				INFOPLIST_FILE = Seafood/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +308,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SZV6XCL93K;
 				INFOPLIST_FILE = Seafood/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
