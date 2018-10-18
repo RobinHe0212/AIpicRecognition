@@ -54,18 +54,17 @@ class ViewController: UIViewController ,UIImagePickerControllerDelegate, UINavig
             guard  let result = vnRequest.results as? [VNClassificationObservation] else{fatalError("cannot get the request result")}
             print(result)
             if let firstResult = result.first {
-                if firstResult.identifier.contains("desktop computer"){
+                if firstResult.identifier.contains("banana"){
                     self.trueOrfalse.image=UIImage(named: "correct")
-                    self.text.text = "desktop computer!"
-                    self.text.backgroundColor=UIColor.lightGray
-                    self.text.textColor=UIColor.blue
-                    self.navigationItem.title="It is a desktop computer!"
+                    self.navigationController?.navigationBar.titleTextAttributes=[NSAttributedString.Key.foregroundColor : UIColor.blue]
+                
+                    self.navigationItem.title="It is a banana!"
                 }else {
                     self.trueOrfalse.image=UIImage(named: "cross")
-                    self.navigationItem.title="Not a desktop computer!"
-                    self.text.text = "Not desktop computer!"
-                    self.text.backgroundColor=UIColor.lightGray
-                    self.text.textColor=UIColor.red
+                    self.navigationItem.title="Not a banana!"
+                    self.navigationController?.navigationBar.titleTextAttributes=[NSAttributedString.Key.foregroundColor : UIColor.red]
+
+                    
                 }
                 
                 
